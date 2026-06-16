@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuraMovie</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fas fa-film"></i> AuraMovies
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchMovie" placeholder="Search Movies...">
+    </div>
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Unlimited Movies</h1>
+        <p>Browse Movies & Watch Trailers</p>
+    </div>
+</section>
+
+<div class="filter-section">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="Action">Action</button>
+    <button class="filter-btn" data-category="Thriller">Thriller</button>
+    <button class="filter-btn" data-category="Comedy">Comedy</button>
+    <button class="filter-btn" data-category="Sci-Fi">Sci-Fi</button>
+</div>
+
+<section class="movies" id="movieContainer">
+
+
+    <div class="movie-card" data-category="Action">
+        <img src="Mankatha.jpeg" alt="">
+        <div class="movie-info">
+            <h3>Mankatha</h3>
+            <p>Action</p>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+            <button onclick="window.open('https://youtu.be/a3rB6he7q4c?si=Pr5AwwqaatK8f21t','_blank')">
+    Watch Trailer
+</button>
+        </div>
+    </div>
+
+    
+    <div class="movie-card" data-category="Thriller">
+        <img src="Dhuruvangal Pathinaaru.jpeg" alt="">
+        <div class="movie-info">
+            <h3>Dhuruvangal Pathinaaru</h3>
+            <p>Thriller</p>
+            <div class="rating">⭐⭐⭐⭐ 4.5</div>
+           <button onclick="window.open('https://youtu.be/xpt2jfiL5GY?si=w6SuVFYQb6zdI2j5','_blank')">
+    Watch Trailer
+</button>
+        </div>
+    </div>
+
+
+    <div class="movie-card" data-category="Comedy">
+        <img src="Panchatanthiram.jpg" alt="">
+        <div class="movie-info">
+            <h3>Panchatanthiram</h3>
+            <p>Comedy</p>
+            <div class="rating">⭐⭐⭐⭐ 4.3</div>
+           <button onclick="window.open('https://youtu.be/KGc5PWXs7UM?si=_24aK5yDEgZfiIVF','_blank')">
+    Watch Trailer
+</button>
+        </div>
+    </div>
+
+
+    <div class="movie-card" data-category="Sci-Fi">
+        <img src="24.jpg" alt="">
+        <div class="movie-info">
+            <h3>24</h3>
+            <p>Sci-Fi</p>
+            <div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+           <button onclick="window.open('https://youtu.be/wqXE_es_I3M?si=ZcG13kWyyP94bQs-','_blank')">
+    Watch Trailer
+</button>
+        </div>
+    </div>
+
+   
+
+</section>
+
+<div id="trailerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <iframe
+            id="trailerFrame"
+            width="100%"
+            height="450"
+            src=""
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
