@@ -37,7 +37,7 @@ header{
 
 .hero{
     height:60vh;
-    background:url('banner.jpg') center/cover;
+    background:url('images/banner.jpg') center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
